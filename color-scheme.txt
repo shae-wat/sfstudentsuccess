@@ -1,0 +1,7 @@
+Yellow: #fff450
+
+Dark blue: #392b83
+
+Pink: #ee0187
+
+Light Blue: #4b63ad (Imelda doesnt like)

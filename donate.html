@@ -1,3 +1,97 @@
+<style>
+  a {
+    color: #2b3990;
+  }
+
+  a:hover {
+    color: #9a8abb !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .form-errors .errorExplanation h2,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  }
+
+  button.btn-primary,
+  input.btn-primary,
+  a.btn-primary {
+    color: #000000;
+    background-color: #ee0187;
+    border-color: #ee0187;
+  }
+  button.btn-primary:hover,
+  input.btn-primary:hover,
+  a.btn-primary:hover {
+    color: #ffffff !important;
+    background-color: #9a8abb;
+    border-color: #9a8abb;
+  }
+
+  .navbar-nav-primary {
+    margin-right: 12px;
+  }
+
+  .nav-link {
+    margin-right: 36px;
+  }
+
+  .secondary-content {
+    margin-top: 64px;
+  }
+
+  .graphic-content {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .card {
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+
+  .card-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .title-block {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .title-yes {
+    font-weight: 900;
+    margin-bottom: 24px;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .desktop-only {
+      display: none;
+    }
+
+    .card-row {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    .mobile-only {
+      display: none;
+    }
+  }
+</style>
 {% include "translation" %}
 
 {% capture form %}

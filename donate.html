@@ -426,86 +426,147 @@
   {% endform_for %}
 {% endcapture %}
 
-{% if site.has_background_image? %}
-  <div class="row no-gutters">
-    <div class="col-md-6">
-      <div class="min-vh-100 bg-white">
-        <header class="py-3 px-4 border-bottom">
-          <a class="navbar-brand" href="/">
-            {% if site.has_meta_image? %}
-              <img src="{{ site.meta_image_url }}" class="navbar-brand-img mw-100" alt="{{ site.long_name }}"/>
-            {% else %}
-              {{ site.long_name }}
-            {% endif %}
+<div class="header-img-wrap pb-4 pt-lg-4">
+  <header id="header" class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/">
+      <img src="https://assets.nationbuilder.com/sfstudentsuccess/sites/1/meta_images/original/Untitled_design.png?1662161961" class="navbar-brand-img mw-100" alt="San Francisco Empty Homes Tax">
+    </a>
+
+    <!-- _nav.html -->
+
+    <!-- _translation.html -->
+
+    <!-- _tag_list.html -->
+
+    <!-- /_tag_list.html -->
+
+    <!-- _translation_en.html -->
+
+    <!-- /_translation_en.html -->
+
+    <!-- /_translation.html -->
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#mobileNav"
+      aria-controls="mobileNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      Menu
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- _nav_mobile.html -->
+
+    <!-- _translation.html -->
+
+    <!-- _tag_list.html -->
+
+    <!-- /_tag_list.html -->
+
+    <!-- _translation_en.html -->
+
+    <!-- /_translation_en.html -->
+
+    <!-- /_translation.html -->
+
+    <div class="collapse navbar-collapse" id="mobileNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Join</a>
+        </li>
+
+        <li class="nav-item nav-item-bordered nav-item-padded">
+          <a href="/donate" class="btn btn-primary btn-block">Donate</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- /_nav_mobile.html -->
+
+    <!-- _nav_desktop.html -->
+
+    <!-- _translation.html -->
+
+    <!-- _tag_list.html -->
+
+    <!-- /_tag_list.html -->
+
+    <!-- _translation_en.html -->
+
+    <!-- /_translation_en.html -->
+
+    <!-- /_translation.html -->
+
+    <div class="collapse navbar-collapse" id="primaryNav">
+      <ul class="navbar-nav navbar-nav-primary">
+        <li class="nav-item d-none">
+          <a href="/" class="nav-link">Join</a>
+        </li>
+
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item navbar-more">
+          <a
+            href="javascript:void(0);"
+            class="nav-link navbar-more-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            More
           </a>
-        </header>
-        <div class="px-4 px-md-5 pt-5">
-          {% if page.headline.size > 0 or page.donation_v2.content.size > 0 %}
-            <div class="mb-5">
-              {% if page.headline.size > 0 %}
-                <h2 class="m-0 h3">{{ page.headline }}</h2>
-              {% endif %}
-              {% if page.donation_v2.content.size > 0 %}
-                <div class="mt-4 lead">{{ page.donation_v2.content }}</div>
-              {% endif %}
-            </div>
-          {% endif %}
-          {{ form }}
-        </div>
-      </div>
-      {% if page.show_social_slider? and page.public_activities_count > 0 %}
-        <div class="pb-3 bg-light">
-          {% include "social_slider" %}
-        </div>
-      {% endif %}
-      {% include "footer" %}
-    </div>
-  </div>
-  <div class="donation-bg" style="background-image: url({{ site.background_image_url }});"></div>
-{% else %}
-  <header class="bg-dark">
-    <div class="container">
-      <div class="row justify-content-center pt-4 pb-5">
-        <div class="col-md-9">
-          {% include "header_mini" %}
-        </div>
-      </div>
-      {% if page.headline.size > 0 or page.donation_v2.content.size > 0 %}
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-9">
-            <div class="px-md-5">
-              {% if page.headline.size > 0 %}
-                <h2 class="m-0 h3 text-white">{{ page.headline }}</h2>
-              {% endif %}
-              {% if page.donation_v2.content.size > 0 %}
-                <div class="mt-4 text-light lead">{{ page.donation_v2.content }}</div>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      {% endif %}
-    </div>
-  </header>
-  <div class="wrapper-donation-v2">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-9">
-          <div class="card card-lg overflow-hidden">
-            <div class="card-body pb-0">
-              {{ form }}
-            </div>
-            {% if page.show_social_slider? and page.public_activities_count > 0 %}
-              <div class="card-social-slider">
-                {% include "social_slider" %}
+          <div class="navbar-more-container" aria-hidden="true" inert="">
+            <div class="navbar-more-inner">
+              <div class="navbar-more-roots" style="">
+                <a class="navbar-more-item" href="/" tabindex="-1">Join</a>
+
               </div>
-            {% endif %}
+              <div class="navbar-more-leafs"></div>
+            </div>
           </div>
+        </li>
+      </ul>
+
+      <a href="/donate" class="btn btn-primary navbar-btn text-nowrap"
+        >Donate</a
+      >
+    </div>
+
+    <!-- /_nav_desktop.html -->
+
+    <!-- /_nav.html -->
+  </header>
+</div>
+
+<!-- _features.html -->
+
+<!-- /_features.html -->
+
+<main id="content" class="bg-white" role="main">
+  <div class="page">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div style="margin: auto; margin-bottom: 48px;">
+          <img
+            src="https://dsasf-62612.web.app/student-success/banner-title.png"
+            width="100%"
+            alt="Yes on G Student Success"
+          />
         </div>
+        <strong>
+          <h1 class="title-yes" style="margin-left: auto; margin-right: auto; margin-bottom: 48px;">Donate</h1
+        </strong>
+      </div>
+      <div class="col-lg-9" style="margin-left: auto; margin-right: auto;">
+        {{ form }}
       </div>
     </div>
   </div>
-  {% include "footer" %}
-{% endif %}
+</main>
+{% include "footer" %}
 
 <script>
   var currentLocale = "{{ current_language }}";

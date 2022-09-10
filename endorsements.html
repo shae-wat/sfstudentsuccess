@@ -20,7 +20,12 @@
   .h5,
   .h6,
   code {
+    font-weight: bolder;
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  }
+
+  h3 {
+    color: #392b83;
   }
 
   code {
@@ -95,7 +100,7 @@
     margin-bottom: 24px;
   }
 
-  .title-yes {
+  .title-text {
     font-weight: 900;
   }
 
@@ -155,31 +160,27 @@
           alt="Yes on G Student Success"
         />
       </div>
+      <strong
+        ><h1 class="title-text">
+          Endorsements
+        </h1></strong
+      >
       <div class="card">
         <div class="card-row">
           <img
             class="graphic-content"
-            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-cc-ca.svg"
+            src="https://dsasf-62612.web.app/endorsers/uesf.jpg"
             alt="California Common Cause"
             width="275px"
             height="auto"
           />
           <img
             class="graphic-content"
-            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-lwvsf.png"
+            src="https://dsasf-62612.web.app/endorsers/coleman_advocates.jpg"
             alt="League of Women Voters of San Francisco"
             width="275px"
             height="auto"
           />
-          <img
-            class="graphic-content"
-            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-rep-us.png"
-            alt="RepresentUs"
-            width="275px"
-            height="auto"
-          />
-        </div>
-        <div class="card-row">
           <img
             class="graphic-content"
             src="https://dsasf-62612.web.app/up-vote/endorsements/logo-sf-dem-party.png"
@@ -187,16 +188,25 @@
             width="250px"
             height="auto"
           />
+        </div>
+        <div class="card-row">
           <img
             class="graphic-content"
-            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-adv-just.png"
+            src="https://dsasf-62612.web.app/endorsers/nuhw_dark.jpg"
+            alt="RepresentUs"
+            width="275px"
+            height="auto"
+          />
+          <img
+            class="graphic-content"
+            src="https://dsasf-62612.web.app/endorsers/ppssf.png"
             alt="Asian Americans Advancing Justice- Asian Law Caucus"
             width="275px"
             height="auto"
           />
           <img
             class="graphic-content"
-            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-sierra-club.png"
+            src="https://dsasf-62612.web.app/endorsers/beacon_logo.png"
             alt="Sierra Club"
             width="250px"
             height="auto"
@@ -205,36 +215,23 @@
         <div class="card-row">
           <img
             class="graphic-content"
-            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-milk.png"
-            alt="Harvey Milk LGBTQ Democratic Club"
-            width="275px"
-            height="auto"
-          />
-          <img
-            class="graphic-content"
-            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-sfwpc.png"
+            src="https://dsasf-62612.web.app/endorsers/sf_democratic_club.jpg"
             alt="San Francisco Women’s Political Committee"
             width="275px"
             height="auto"
           />
           <img
             class="graphic-content"
-            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-sflc.png"
-            alt="San Francisco Labor Council"
+            src="https://dsasf-62612.web.app/up-vote/endorsements/logo-milk.png"
+            alt="Harvey Milk LGBTQ Democratic Club"
             width="275px"
             height="auto"
           />
         </div>
       </div>
     </div>
-    </div>
-    <div class="col-lg-8">
-
-      <h2 class="page-headline">{{ page.headline }}</h2>
-
-      <div class="page-content">
-        {{ page.basic.content }}
-      </div>
+    <div class="col-lg-11">
+      {{ page.basic.content }}
     </div>
   </div>
 </div>
